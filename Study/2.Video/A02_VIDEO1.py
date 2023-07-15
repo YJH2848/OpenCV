@@ -1,5 +1,5 @@
 import cv2
-cap = cv2.VideoCapture('video.mp4') #video.mp4가져와서 cap에 넣어줌
+cap = cv2.VideoCapture('../video.mp4') #video.mp4가져와서 cap에 넣어줌
 
 while cap.isOpened(): #동영상이 열렸는지 확인
     ret, frame = cap.read() #ret는 성공여부, 성공하면 frame값이 저장됨
