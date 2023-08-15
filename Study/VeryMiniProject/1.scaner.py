@@ -24,7 +24,7 @@ def show_result():
     dst = np.array([[0, 0], [width, 0], [width, height], [0, height]], dtype=np.float32)
 
     matrix = cv2.getPerspectiveTransform(src, dst)
-    result = cv2.warpPerspective(src_img, matrix, (width, height)) #matrix대로 변환를 함
+    result = cv2.warpPerspective(src_img, matrix, (width, height)) 
 
 
     cv2.imshow('result', result)
