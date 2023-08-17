@@ -12,7 +12,7 @@ src_img = cv2.imread('pokerCard.jpg')
 def mouse_handler(event, x, y, flags, param):
     global drawing
 
-    dst_img = src_img.copy()
+    dst_img = src_img.copy() #사진 사본 복사
 
     if event == cv2.EVENT_LBUTTONDOWN:
         point_list.append((x, y))
